@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>Crevolise</title>
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <link rel="icon" href="images/">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <section class="header">
+            <div class="header-content">
+                <h1>CREVOLISE</h1>
+                <p>is coming soon</p>
+                <button type="button" class="button-hurray">Hurray!</button>
+            </div>
+        </section>
+        
+        <section class="footer">
+            <h3><i class="fa fa-copyright"></i> 2021 by Crevolise<h3>
+            <p>www.crevolise.com</p>
+        </section>
+    </body>
+
+    <script>
+        var btn = document.getElementsByClassName("button-hurray")[0];
+        var head = document.getElementsByClassName("header-content")[0];
+
+        btn.onclick = function(){
+            head.classList.add("animation");
+            setTimeout(function(){
+                head.classList.remove("animation")
+            },3000);
+        }
+    </script>
+</html>
