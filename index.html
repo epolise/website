@@ -14,9 +14,16 @@
     <body>
         <section class="header">
             <div class="header-content">
-                <h1>CREVOLISE</h1>
-                <p>is coming soon</p>
-                <button type="button" class="button-hurray">Hurray!</button>
+                <div class="header-left">
+                    <p>-</p>
+                </div>
+                <div class="header-center">
+                    <p> Those who never give up their dreams
+                    <br> are those who will become a winner of life </p>
+                </div>
+                <div class="header-right">
+                    <p>-</p>
+                </div>
             </div>
         </section>
         
@@ -25,16 +32,4 @@
             <p>www.crevolise.com</p>
         </section>
     </body>
-
-    <script>
-        var btn = document.getElementsByClassName("button-hurray")[0];
-        var head = document.getElementsByClassName("header-content")[0];
-
-        btn.onclick = function(){
-            head.classList.add("animation");
-            setTimeout(function(){
-                head.classList.remove("animation")
-            },3000);
-        }
-    </script>
 </html>
